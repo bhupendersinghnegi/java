@@ -1,0 +1,611 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Apr, 2020, 8:21:19 AM
+    Author     : Dell
+*/
+/*Mean*/
+.img{
+    width:100%;
+    height: auto;
+}
+.mg-1{margin-top: 1em;}
+/*Mean close*/
+.navbar-dark .navbar-brand{
+    width: 50px;
+}
+.navbar-dark .navbar-brand img{
+    width: 100%;
+    height: auto;
+}
+    
+.nav-color{
+    background: #2196f3!important;
+    border-bottom: 1px solid #000;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-dark .navbar-nav .pro-img{    
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 7em;
+    border: 1px solid #0000004d;
+    overflow: hidden;
+}
+/*banner*/
+.banner{
+    clip-path:polygon(50% 0%, 100% 0, 100% 91%, 88% 89%, 77% 94%, 67% 88%, 61% 96%, 22% 88%, 0 95%, 0 0);
+}
+.banner .jumbotron{
+    background: #2196f3;
+    border-radius: 0;
+}
+.banner .color-fff{
+    color: #fff;
+}
+.banner .btn-primary{
+    background: #2196f3;
+    margin: 10px 5px;
+    border: 1px solid #fff;
+}
+.banner .btn-primary:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.8s;
+}
+/*box*/
+.box .btn-primary{
+    background: #2196f3;
+    margin: 10px 5px;
+    border: 1px solid #fff;
+}
+.box .btn-primary:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.8s;
+}
+.box .row{
+    margin: 10px 0px;
+}
+/*login*/
+.enter .jumbotron{
+    background: #2196f3;
+    border-radius: 0;
+    padding-top: 1rem;
+    height: 90vh;
+    margin: 0;
+}
+.enter .heading{
+    color: #fff;
+}
+.enter .form{
+    width: 100%;
+}
+.enter .form .form-input{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.enter .form .form-input input::placeholder{
+    color: #fff;
+}
+.enter .form .form-input input{
+   width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: #2196f3;
+    padding: 8px 10px;
+    color: #fff;
+    cursor: pointer;    
+}
+.enter .form .form-input label::before{
+    content: '';
+    position: absolute;
+    left: -50%;
+    bottom: 0;
+    background: #000;
+    width: 50%;
+    height: 2px;
+}
+.enter .form .form-input label::after{
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    background: #000;
+    width: 50%;
+    height: 2px;
+}
+.enter .form .form-input:hover label::after,.enter .form .form-input:hover label::before{
+    left: 0%;
+    transition: 0.8s;
+}
+.enter .form input[type="submit"].btn-primary{
+    border: 1px solid #fff;
+    margin-top: 1rem;
+}
+.enter .form input[type="submit"].btn-primary:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.8s;
+}
+.enter #process{
+    font-size: 2.5rem;
+    color: #fff;
+    display: none;
+}
+.enter .errors{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+/*error page*/
+.error img{
+    padding: 3.5rem 0rem 0rem 0rem;
+    width:25%;
+    height: auto;
+}
+.error p{
+    font-size: 2rem;
+}
+/*profile*/
+.profile .navbar-dark .login{}
+.profile .navbar-dark .login .dropdown-toggle img{
+    width: 100%;
+    height: auto;
+}
+.profile .login .dropdown-toggle::after{
+    content: '';
+    display: none;
+}
+.profile .login .dropdown-menu{
+    right: 0;
+    left: unset;
+    box-shadow: 3px 3px 4px #ddd, -3px 1px 5px #ddd;
+    border: none;
+}
+.profile .login .login-img{
+    position: relative;
+    margin: auto;
+    width: 64px;
+    border-radius: 3em;
+    box-shadow: 2px 2px 3px #aaa, -2px -2px 3px #aaa;
+}
+.profile .login .login-img img.mean{
+    width: 100%;
+    height: auto;
+}
+.profile .login .login-img img#click{
+    cursor: pointer;
+        position: absolute;
+    width: 16px;
+    bottom: 0;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 19px;
+}
+.profile .login .dropdown-menu .first-conterner.container{
+    display: block;
+    padding: 0em 1.5em;
+}
+.profile .login .ent .logout{
+    /* border: 1px solid #000; */
+    padding: 0px 16px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 27px;
+    box-shadow: 4px 4px 5px #ddd, -4px 2px 5px #ddd;
+}
+.profile .login .ent .logout:hover{
+    background:#2196f3;
+    color:#fff!important;
+    transition:0.8s;
+}
+.profile .login .dropdown-menu .text{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    font-size: 20px;
+    /* display: block; */
+    width: 11em;
+}
+/*add-model*/
+.add-modal{
+    width:100%;
+    height:100%;
+    position:absolute;
+    bottom:50%;
+    display:none;
+    padding:10em;
+    transition: 10s;
+    z-index:1000;
+    background: #dddddd91;
+}
+.add-modal .con{
+    display:table-cell;
+    vertical-align:middle;
+}
+.add-modal .data{
+    margin:auto;
+    width:50%;
+    background: #fff;
+    padding: 0.5em 1em;
+    box-shadow: 3px 3px 6px #ddd, -3px -3px 6px #ddd;
+    border-radius: 6px;
+}
+.add-modal .data .header p{
+    color: #aaa;
+}
+.add-modal .data .form input[type="file"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.add-modal .data .form input[type="submit"]{
+    outline: none;
+    margin: auto;
+    padding: 2px 23px;
+    background: #2196f3;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+}
+.add-modal .data .form input[type="submit"]:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.8s;
+}
+.add-modal .data .form #close{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 2px 23px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.add-modal .data .form #close:hover{
+    background: #2196f3;
+    color: #fff;
+    transition: 0.8s;
+}
+/*manage profile*/
+.manage-profile{
+    height: 35.5rem;
+    padding: 0;
+    margin: 0;
+}
+.manage-profile .profile-point{
+    border-right: 1px solid #000;
+    height: 100%;
+    padding: 0;
+}
+.manage-profile .profile-point ul{
+    list-style: none;
+    padding: 0;
+}
+.manage-profile .profile-point li{
+    padding: 10px 24px;
+    border-bottom: 1px solid #fff;
+}
+.edit-home .manage-profile .profile-point li#home a,.edit-home .manage-profile .profile-point li#home span{
+ color: #fff;
+}
+.edit-home .manage-profile .profile-point li#home{
+    background: #2196f3;
+    border-bottom: 1px solid #000;
+}
+.edit-info .manage-profile .profile-point li#personal a,.edit-info .manage-profile .profile-point li#personal span{
+ color: #fff;
+}
+.edit-info .manage-profile .profile-point li#personal{
+    background: #2196f3;
+    border-bottom: 1px solid #000;
+}
+.manage-profile .profile-point li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+}
+.manage-profile .profile-point li:hover{
+    background: #2196f3;
+    border-bottom: 1px solid #000;
+    transition: .8s ease-out;
+}
+.manage-profile .profile-point li:hover a,.manage-profile .profile-point li:hover span{
+    color: #fff;
+}
+.manage-profile .profile-point li span{
+    font-size: 20px;
+    width: 10%;
+}
+.manage-profile .profile-data{
+    padding-top: 1em;
+     height: 100%; 
+    overflow-x: hidden;
+}
+.manage-profile .profile-data .info{
+    text-align: center;
+}
+.manage-profile .profile-data .info .set-img{
+    width: 10%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 3em;
+    box-shadow: 1px 1px 4px #aaa, -1px -1px 4px #aaa;
+}
+.manage-profile .profile-data .info h1{
+    font-weight: 400;
+    padding: 0px 0px;
+}
+.manage-profile .profile-data .info p{
+    color: #aaa;
+}
+.manage-profile .profile-data .info img{
+    width: 100%;
+    height: auto;
+}
+.manage-profile .profile-data .contain{
+    padding: 1em;
+    /* border: 1px solid #aaa; */
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px #ddd,-2px -2px 4px #ddd;
+}
+.manage-profile .profile-data .contain img{width: 5em;float: right;}
+.manage-profile .profile-data .contain p{
+    color: #aaa;
+}
+.manage-profile .profile-data .contain a:hover{
+    text-decoration: none;
+}
+/*edit info*/
+.manage-profile .profile-data .contains{
+    /* border: 1px solid #aaa; */
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px #ddd,-2px -2px 4px #ddd;
+}
+.edit-info .profile-data .contains .heading{    
+    padding: 1em;
+}
+.edit-info .profile-data .contains .heading h1{
+    font-weight: 600;
+}
+.edit-info .profile-data .contains .heading p{
+    color:#ddd;
+}
+.edit-info .profile-data .contains .edit-body .list li{
+    display: inline-block;
+}
+.edit-info .profile-data .contains .edit-body .list{
+    list-style: none;
+    border-bottom: 1px solid #aaa;
+    padding: 0.5em 2em 0em 2em;
+    cursor: pointer;
+    margin: 0;
+}
+.edit-info .profile-data .contains .edit-body .list:hover{
+    background:#dddddd8a;
+    transition:0.8s;
+}
+.edit-info .profile-data .contains .edit-body .list:hover span{
+    width:0;
+}
+.edit-info .profile-data .contains .edit-body ul:last-child{
+    border:none;
+}
+.edit-info .profile-data .contains .edit-body .list li.uname{
+    letter-spacing: 1px;
+    color: #aaa;
+    width: 21%;
+}
+.edit-info .profile-data .contains .edit-body .form-img{
+    width: 8%;
+    margin: auto;
+    box-shadow: 2px 2px 4px #aaa,-2px -2px 4px #aaa;
+    border-radius: 5em;
+    overflow: hidden;
+    position:relative;
+    cursor:pointer;
+}
+.edit-info .profile-data .contains .edit-body .form-img p{
+    display:black;
+    color:#fff;
+    text-align:center;
+    background:#00000091;
+    position:absolute;
+    width:100%;
+    height:35%;
+     transition:0.8s; 
+    top: 66%;
+}
+.edit-info .profile-data .contains .edit-body .list li.name p{
+    display:inline-block;
+    font-weight: 500;
+}
+.edit-info .profile-data .contains .edit-body .list li.name p:first-letter{
+    text-transform:uppercase;
+}
+.edit-info .profile-data .contains .edit-body .list li.name span{
+    float:right;
+}
+.edit-info .profile-data .contains .edit-body .list li.name{
+    font-size: 18px;
+    width: 100%;
+}
+.edit-info .profile-data .contains .edit-body{padding-top: 1em;}
+/*form model*/
+.add-form{
+    width:100%;
+    height:100%;
+    position:absolute;
+    bottom:50%;
+    display:none;
+    padding:10em;
+    transition: 10s;
+    z-index:1000;
+    background: #dddddd91;
+}
+.add-form .con{
+    display:table-cell;
+    vertical-align:middle;
+}
+.add-form .data{
+    margin:auto;
+    width:50%;
+    background: #fff;
+    padding: 0.5em 1em;
+    box-shadow: 3px 3px 6px #ddd, -3px -3px 6px #ddd;
+    border-radius: 6px;
+}
+.add-form .data .header p{
+    color: #aaa;
+}
+.add-form .data .form input[type="file"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.add-form .data .form input[type="text"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border:1px solid #000;
+    border-radius:3px;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.add-form .data .form input[type="email"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 0rem 0rem 1rem 0rem;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.add-form .data .form input[type="password"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border:1px solid #000;
+    border-radius:3px;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.add-form .data .form input[type="submit"]{
+    outline: none;
+    margin: auto;
+    padding: 2px 23px;
+    background: #2196f3;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+}
+.add-form .data .form input[type="submit"]:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.8s;
+}
+.add-form .data .form #close-form{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 2px 23px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.add-form .data .form #close-form:hover{
+    background: #2196f3;
+    color: #fff;
+    transition: 0.8s;
+}
+/*images*/
+.add-form-img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    bottom:50%;
+    display:none;
+    padding:10em;
+    transition: 10s;
+    z-index:1000;
+    background: #dddddd91;
+}
+.add-form-img .con{
+    display:table-cell;
+    vertical-align:middle;
+}
+.add-form-img .data{
+    margin:auto;
+    width:50%;
+    background: #fff;
+    padding: 0.5em 1em;
+    box-shadow: 3px 3px 6px #ddd, -3px -3px 6px #ddd;
+    border-radius: 6px;
+}
+.add-form-img .data .header p{
+    color: #aaa;
+}
+.add-form-img .data .form input[type="file"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.add-form-img .data .form input[type="text"]{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border:1px solid #000;
+    border-radius:3px;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.add-form-img .data .form input[type="submit"]{
+    outline: none;
+    margin: auto;
+    padding: 2px 23px;
+    background: #2196f3;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+}
+.add-form-img .data .form input[type="submit"]:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.8s;
+}
+.add-form-img .data .form #close-form{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 2px 23px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.add-form-img .data .form #close-form:hover{
+    background: #2196f3;
+    color: #fff;
+    transition: 0.8s;
+}
+.error{
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+    background: #c1c1c1;
+    color: #000;
+    margin-top:1em; 
+}
